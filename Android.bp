@@ -15,7 +15,6 @@ android_app_import {
     ],
     presigned: true,
     privileged: true,
-    product_specific: true,
     required: [
         "libcamera_algoup_jni.xiaomi",
         "privapp-permissions-miuicamera.xml",
@@ -26,7 +25,6 @@ android_app_import {
     name: "MiuiExtraPhoto",
     apk: "prebuilt/MiuiExtraPhoto.apk",
     certificate: "media",
-    product_specific: true,
     uses_libs: ["org.apache.http.legacy"],
 }
 
@@ -38,7 +36,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    product_specific: true,
     shared_libs: [
         "libbinder",
         "libc++",
